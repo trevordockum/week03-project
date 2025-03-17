@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link to Bootstrap CSS from local node_modules -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="bg-dark container-fluid">
+
+    <!-- Navigation bar - dark theme, sticky positioning -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+
+            <!-- Brand logo with link to homepage -->
+            <a class="navbar-brand" href="index.html">Astro Solar</a>
+
+            <!-- Hamburger toggle button for mobile navigation -->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible navigation menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <!-- Active class highlights current page in navigation -->
+                        <a class="nav-link active" href="solar.html">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main content container with light text on dark background -->
+    <div id="main-container" class="container-fluid text-center text-light">
+
+            <!-- Page title with styled background -->
+            <div class="bg-secondary d-inline-block mt-0 mb-3 px-4 py-2 rounded">
+                <h2>Technology Behind Our Modules</h2>
+            </div>
+
+            <!-- Two-column layout for image and text using Bootstrap grid -->
+            <div class="row">
+
+                <!-- Left column with solar cell image -->
+                <div class="col-md-6 pb-2 pt-5">
+                    <div>
+                        <img src="images/solar cells.jpg"  class="image-fluid rounded w-75" alt="Solar cells">
+                    </div>
+                </div>
+
+                <!-- Right column with text and comparison table -->
+                <div class="col-md-6 pb-2 pt-5">
+                    <div>
+                        <p>
+                            All of the modules we use for installation are "Tier 1" solar modules. Tier 1 solar panels are rated as the highest performing
+                            solar panels on the market. They are evaluted by the following metrics.
+                        </p>
+                    </div>
+
+                    <!-- Comparison table showing different tiers of solar panels -->
+                    <div class="pb-2 pt-2">
+                        <table class="table table-striped-columns">
+
+                            <!-- Table header row with column titles -->
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tier Class</th>
+                                    <th scope="col">Durability</th>
+                                    <th scope="col">Efficiency</th>
+                                    <th scope="col">Performance Warranty</th>
+                                </tr>
+                            </thead>
+
+                            <!-- Table body with data rows and dividers -->
+                            <tbody class="table-group-dividers">
+
+                                <!-- Tier 1 (premium) solar panels -->
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <th>Premium</th>
+                                    <th>19% - 23%</th>
+                                    <th>25 - 30 years</th>
+                                </tr>
+
+                                <!-- Tier 2 (mid-grade) solar panels -->
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <th>Mid-Grade</th>
+                                    <th>15% - 18%</th>
+                                    <th>20 - 25 years</th>
+                                </tr>
+
+                                <!-- Tier 3 (low-grade) solar panels -->
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <th>Low-Grade</th>
+                                    <th><15%</th>
+                                    <th>10 - 15 years</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spacing between sections -->
+            <br><br><br>
+            
+            <!-- Additional information section about product quality and warranties -->
+            <div class="text-start">
+                <p>
+                    All modules that we offer are 100% Tier 1 panels that are constructed entirely within the United States.
+                    Our company's belief, and vision is to offer the best products, at a competitive price. Solar panel manufactures
+                    internal to the United States receive additional tax incentives and goverment funding, and we pass these savings
+                    down to EVERY "Astro Powered" home.
+                </p>
+                <p><br>
+                    All of our products come with a 25-year produciton warranty, and 25-year service warranty as well. Not only will
+                    your system be guaranteed to hit a minimum production requirement yearly, but if we do not hit (or exceed) the
+                    guaranteed production for your system you will be compensated for the loss in energy! We hold ourselves to this
+                    standard so there is more savings, more protection, and more power in your hands.
+                </p><br>
+                <div class="text-center">
+                    <p>
+                        Click the link below to get a custom design tailored to your home's needs!
+                    </p><br>
+
+                    <!-- Call-to-action button linking to contact page -->
+                    <a href="contact.html" class="btn btn-outline-danger">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Spacing before footer -->
+            <br><br><br>
+            <hr>
+            
+            <!-- Footer section with author information -->
+            <footer class="fst-italic">
+                Trevor Dockum - Promineo Tech 2025
+            </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript bundle for interactive components (like mobile menu) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
